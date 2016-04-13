@@ -37,17 +37,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(154, 17);
+            this.label1.Location = new System.Drawing.Point(205, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Databases";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(238, 226);
+            this.button1.Location = new System.Drawing.Point(317, 278);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 2;
             this.button1.Text = "Open DB";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 33);
+            this.button2.Location = new System.Drawing.Point(16, 41);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 23);
+            this.button2.Size = new System.Drawing.Size(144, 28);
             this.button2.TabIndex = 3;
             this.button2.Text = "Display Databases";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,20 +69,23 @@
             // ListDBs
             // 
             this.ListDBs.FormattingEnabled = true;
-            this.ListDBs.Location = new System.Drawing.Point(126, 33);
+            this.ListDBs.ItemHeight = 16;
+            this.ListDBs.Location = new System.Drawing.Point(168, 41);
+            this.ListDBs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListDBs.Name = "ListDBs";
-            this.ListDBs.Size = new System.Drawing.Size(187, 173);
+            this.ListDBs.Size = new System.Drawing.Size(248, 212);
             this.ListDBs.TabIndex = 4;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 261);
+            this.ClientSize = new System.Drawing.Size(433, 321);
             this.Controls.Add(this.ListDBs);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);

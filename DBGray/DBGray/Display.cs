@@ -17,25 +17,33 @@ namespace DBGray
         ConnString conn = new ConnString();
         public string[] DisplayDBs()
         {
-            string[] rows = new string[1];
+            
             MySqlConnection connection = new MySqlConnection(conn.getConnString());
             String query = "SHOW DATABASES;";
             MySqlCommand command = new MySqlCommand(query, connection);
             connection.Open();
             MySqlDataReader reader = command.ExecuteReader();
-            int i;
+
+            string[] rows = new string[reader.FieldCount];
+
+            int i = 0;
             while (reader.Read())
             {
-               for (i = 0; i < reader.FieldCount; i++)
-                   rows[i] += reader.GetValue(i).ToString() + ", ";
-                
+                if(i != 0)
+                {
+                    rows[i - 1] = reader[0].ToString();
+                }
+                i++;
             }
             reader.Close();
-            string[] catrows = rows;
-
             
             connection.Close();
-            return catrows;
+            System.Console.WriteLine("WORKING?");
+            for (int j = 0; j < rows.Length; j++)
+            {
+                System.Console.WriteLine("HERE: " + rows[j]);
+            }
+                return rows;
         }
 
         public void DisplayTables()

@@ -21,8 +21,7 @@ namespace DBGray
         private void button2_Click(object sender, EventArgs e)
         {
             displayDB = new Display();
-            string[] row = new string[1];
-            Array.Copy(displayDB.DisplayDBs(), row, displayDB.DisplayDBs().Length);
+            string[] row = displayDB.DisplayDBs();
             for (int i = 0; i < 1; i++)
             {
                 ListDBs.Items.Add(row[i]);
