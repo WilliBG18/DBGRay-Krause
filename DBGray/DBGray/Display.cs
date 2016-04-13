@@ -22,15 +22,15 @@ namespace DBGray
             String query = "SHOW DATABASES;";
             MySqlCommand command = new MySqlCommand(query, connection);
             connection.Open();
-            MySqlDataReader Reader = command.ExecuteReader();
+            MySqlDataReader reader = command.ExecuteReader();
             int i;
-            while (Reader.Read())
+            while (reader.Read())
             {
-               for (i = 0; i < Reader.FieldCount; i++)
-                   rows[i] += Reader.GetValue(i).ToString() + ", ";
+               for (i = 0; i < reader.FieldCount; i++)
+                   rows[i] += reader.GetValue(i).ToString() + ", ";
                 
             }
-            Reader.Close();
+            reader.Close();
             string[] catrows = rows;
 
             
