@@ -1,0 +1,12 @@
+c:\users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\bin\Debug\DBGray.exe.config
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\bin\Debug\DBGray.exe
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\bin\Debug\DBGray.pdb
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\bin\Debug\MySql.Data.dll
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.csprojResolveAssemblyReference.cache
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.Form1.resources
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.Properties.Resources.resources
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.csproj.GenerateResource.Cache
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.exe
+C:\Users\willi_000\documents\visual studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.pdb
+C:\Users\willi_000\Documents\Visual Studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.Form2.resources
+C:\Users\willi_000\Documents\Visual Studio 2015\Projects\DBGray\DBGray\obj\Debug\DBGray.Form3.resources
