@@ -10,10 +10,21 @@ namespace DBGray
     {
 
         static string myConnectionString;
+        public string database;
+
+        public ConnString()
+        {
+            database = "";
+        }
+
+        public void SetDatabase(string database)
+        {
+            this.database = database;
+        }
 
         public void staticConn(string server, string userID, string password)
         {
-            myConnectionString = "server=" + server + ";" + "uid=" + userID + ";" + "pwd=" + password + ";";
+            myConnectionString = "server=" + server + ";" + "uid=" + userID + ";" + "pwd=" + password + ";" + "database=" + database + ";";
         }
         public string getConnString()
         {

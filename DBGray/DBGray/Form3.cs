@@ -12,9 +12,22 @@ namespace DBGray
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        string database;
+        public Form3(string database)
         {
             InitializeComponent();
+            this.database = database;
+            DisplayTables();
+        }
+        private void DisplayTables()
+        {
+            Display dispTables = new Display();
+            dispTables.DisplayTables(database);
+            string[] row = dispTables.DisplayTables(database);
+            for (int i = 0; i < row.Length; i++)
+            {
+                listBox1.Items.Add(row[i]);
+            }
         }
     }
 }

@@ -26,7 +26,7 @@ namespace DBGray
             string userID = textBox2.Text;
             string password = textBox3.Text;
             conn.staticConn(server, userID, password);
-            connect.connectToDB();
+            connect.connectToDBMS();
         }
     }
 }

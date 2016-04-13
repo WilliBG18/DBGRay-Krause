@@ -22,7 +22,7 @@ namespace DBGray
         {
             displayDB = new Display();
             string[] row = displayDB.DisplayDBs();
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < row.Length; i++)
             {
                 ListDBs.Items.Add(row[i]);
             }
@@ -31,11 +31,8 @@ namespace DBGray
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Display displayTbl = new Display();
-            if(ListDBs.SelectedValue.ToString() == "information_schema, dbGray, ")
-            {
-                displayTbl.DisplayTables();
-            }
+            ConnectDB connect = new ConnectDB();
+            connect.connectToDB(ListDBs.SelectedItem.ToString());
         }
     }
 }

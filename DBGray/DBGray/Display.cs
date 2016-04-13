@@ -35,35 +35,38 @@ namespace DBGray
                 }
                 i++;
             }
-            reader.Close();
             
+            reader.Close();
             connection.Close();
-            System.Console.WriteLine("WORKING?");
-            for (int j = 0; j < rows.Length; j++)
-            {
-                System.Console.WriteLine("HERE: " + rows[j]);
-            }
-                return rows;
+
+            return rows;
         }
 
-        public void DisplayTables()
+        public string[] DisplayTables(string database)
         {
             ConnString conn = new ConnString();
-            List<String> Tablenames = new List<String>();
-            string query = "show tables from dbGray";
-            MySqlConnection connection = new MySqlConnection(conn.getConnString() + "database= dbGray");
-            connection.Open();
+            conn.SetDatabase(database);
+            string query = "show tables from " + database;
+            MySqlConnection connection = new MySqlConnection(conn.getConnString());
             MySqlCommand command = new MySqlCommand(query, connection);
-            Form3 form3 = new Form3();
-            form3.Show();
-            using (MySqlDataReader reader = command.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    Tablenames.Add(reader.GetString(0));
-                }
+            connection.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+
+            List<string> rowList = new List<string>();
+
+            while (reader.Read())
+            {                
+                rowList.Add(reader[0].ToString());
             }
+
+            string[] rows = new string[rowList.Count];
+            for (int i = 0; i < rows.Length; i++)
+                rows[i] = rowList.ElementAt(i);
+
+            reader.Close();
             connection.Close();
+
+            return rows;
         }
     }
 }
