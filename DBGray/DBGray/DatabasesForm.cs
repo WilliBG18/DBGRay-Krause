@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DBGray
 {
-    public partial class Form2 : Form
+    public partial class DatabasesForm : Form
     {
         Display displayDB;
-        public Form2()
+        public DatabasesForm()
         {
             InitializeComponent();
         }

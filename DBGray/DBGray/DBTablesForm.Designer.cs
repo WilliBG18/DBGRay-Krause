@@ -1,6 +1,6 @@
 ﻿namespace DBGray
 {
-    partial class Form3
+    partial class DBTablesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.TablesLB = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // TablesLB
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 228);
-            this.listBox1.TabIndex = 0;
+            this.TablesLB.FormattingEnabled = true;
+            this.TablesLB.Location = new System.Drawing.Point(12, 12);
+            this.TablesLB.Name = "TablesLB";
+            this.TablesLB.Size = new System.Drawing.Size(120, 225);
+            this.TablesLB.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(138, 12);
+            this.button1.Location = new System.Drawing.Point(184, 214);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "View Table";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form3
+            // DBTablesForm
             // 
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Name = "Form3";
+            this.Controls.Add(this.TablesLB);
+            this.Name = "DBTablesForm";
             this.ResumeLayout(false);
 
         }
@@ -63,7 +63,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox listTbls;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox TablesLB;
         private System.Windows.Forms.Button button1;
     }
 }

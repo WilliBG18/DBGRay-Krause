@@ -1,6 +1,6 @@
 ﻿namespace DBGray
 {
-    partial class Form1
+    partial class CredentialsForm
     {
         /// <summary>
         /// Required designer variable.

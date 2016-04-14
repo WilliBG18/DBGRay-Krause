@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace DBGray
 {
-    public partial class Form1 : Form
+    public partial class CredentialsForm : Form
     {
-        public Form1()
+        public CredentialsForm()
         {
             InitializeComponent();
         }

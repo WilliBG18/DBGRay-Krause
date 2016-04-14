@@ -20,7 +20,7 @@ namespace DBGray
 
         public void connectToDBMS()
         {
-            Form2 form2 = new Form2();
+            DatabasesForm form2 = new DatabasesForm();
             ConnString connect = new ConnString();
             conn = new MySqlConnection();
             if (connection == false)
@@ -52,7 +52,7 @@ namespace DBGray
         }
         public void connectToDB(string database)
         {
-            Form3 form3 = new Form3(database);
+            DBTablesForm form3 = new DBTablesForm(database);
             ConnString connect = new ConnString();
             connect.SetDatabase(database);
             conn = new MySqlConnection();

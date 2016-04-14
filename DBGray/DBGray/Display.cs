@@ -10,10 +10,6 @@ namespace DBGray
 {
     class Display
     {
-        public Display()
-        {
-
-        }
         ConnString conn = new ConnString();
         public string[] DisplayDBs()
         {
